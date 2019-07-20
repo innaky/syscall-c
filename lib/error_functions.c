@@ -14,7 +14,7 @@ terminate(Boolean, useExit3)
 
   s = getenv("EF_DUMPCORE");
 
-  if (s != NULL & *s != '\0')
+  if (s != NULL && *s != '\0')
     abort();
   else if (useExit3)
     exit(EXIT_FAILURE);
@@ -37,6 +37,8 @@ outputError(Boolean useErr, int err, Boolean flushStdout,
 	     ename[err] : "?UNKNOWN?", strerror(err));
   else
     snprintf(errText, BUF_SIZE, ":");
+
+  snprintf(buf, BUF_SIZE, "ERROR%s %s\n", errText, userMsg);
 
   if (flushStdout)
     fflush(stdout);

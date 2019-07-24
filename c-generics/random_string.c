@@ -2,24 +2,40 @@
 #include <stdlib.h>
 #include <time.h>
 
-int main() {
+int
+main(int argc, char *argv[]) {
 
-  char abc[] = {"abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ!@#$%&/()=*-_.,;{}+[]0123456789"};
   int string_length;
-  int rchar;
 
   srand(time(NULL));
   printf("Input the length of the string: ");
   scanf("%i", &string_length);
 
-  while (string_length > 0) {
-    string_length--;
-    rchar = (rand() % 81);
-
-    printf("%c", abc[rchar]);
-  }
-
   printf("\n");
 
   return 0;
+}
+
+void
+letters(int str_lng) {
+  int rletter;
+  char letters[] = {"abcdefghijklmnopqrstuvwzyzABCDEFGHIJKLMNOPQRSTUVWXYZ"};
+
+  while (str_lng > 0) {
+    str_lng--;
+    rletter = (rand() % 52);
+    printf("%c", letters[rletter]);
+  }
+}
+
+void
+numbers(int num_lng) {
+  int rnum;
+  char numbers[] = {"0123456789"};
+
+  while (num_lng > 0) {
+    num_lng--;
+    rnum = (rand() % 10);
+    printf("%c", numbers[rnum]);
+  }
 }

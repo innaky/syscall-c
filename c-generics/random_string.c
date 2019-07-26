@@ -4,7 +4,8 @@
 #include <unistd.h> // for getopt
 
 int
-main(int argc, char *argv[]) {
+main(int argc, char *argv[])
+{
 
   int option;
   int option_number;
@@ -55,7 +56,6 @@ usage(void)
   fprintf(stderr, "usage: random [-nsm] number.\n");
   exit(1);
 }
-
 
 void
 letters(int str_lng)

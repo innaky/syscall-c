@@ -40,17 +40,14 @@ main(int argc, char *argv[])
       usage();
     }
 
-  if (nflag) {
+  if (nflag)
     numbers(option_number);
-  }
 
-  if (sflag) {
+  if (sflag)
     letters(option_number);
-  }
 
-  if (mflag) {
+  if (mflag)
     numstr(option_number);
-  }
 
   return 0;
 }

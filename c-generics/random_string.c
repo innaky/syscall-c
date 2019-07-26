@@ -3,6 +3,11 @@
 #include <time.h>
 #include <unistd.h> // for getopt
 
+void numbers(int);
+void letters(int);
+void numstr(int);
+void usage(void);
+
 int
 main(int argc, char *argv[])
 {

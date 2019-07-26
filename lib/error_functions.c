@@ -8,7 +8,7 @@ __attribute__ ((__noreturn__))
 #endif
 
 static void
-terminate(Boolean, useExit3)
+terminate(Boolean useExit3)
 {
   char *s;
 

@@ -18,7 +18,7 @@ main(int argc, char *argv[])
   int sflag = 0;
   int mflag = 0;
 
-  if (argc > 3)
+  if (argc > 3 || argc < 3)
     usage();
 
   option_number = atoi(argv[2]);
@@ -55,7 +55,18 @@ main(int argc, char *argv[])
 void
 usage(void)
 {
-  fprintf(stderr, "usage: random [-nsm] number.\n");
+  fprintf(stderr, "usage: [BINARY] [OPTION] [NUMBER]\n");
+  fprintf(stderr, "\n");
+  fprintf(stderr, "BINARY:\n");
+  fprintf(stderr, "(./random_string.exe)  path to the compiled version of the file\n");
+  fprintf(stderr, "\n");
+  fprintf(stderr, "OPTIONS:\n");
+  fprintf(stderr, "-n         random integer string\n");
+  fprintf(stderr, "-s         random charachter string\n");
+  fprintf(stderr, "-m         random string containing both integers and charachters\n");
+  fprintf(stderr, "\n");
+  fprintf(stderr, "NUMBER:\n");
+  fprintf(stderr, "[0-9]*     any non-negative integer that will define the length of the generated string\n");
   exit(1);
 }
 

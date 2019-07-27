@@ -58,7 +58,7 @@ usage(void)
   fprintf(stderr, "usage: [BINARY] [OPTION] [NUMBER]\n");
   fprintf(stderr, "\n");
   fprintf(stderr, "BINARY:\n");
-  fprintf(stderr, "(./random_string.exe)  path to the compiled version of the file\n");
+  fprintf(stderr, "(./random_string)  path to the compiled version of the file\n");
   fprintf(stderr, "\n");
   fprintf(stderr, "OPTIONS:\n");
   fprintf(stderr, "-n         random integer string\n");

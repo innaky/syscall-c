@@ -19,6 +19,25 @@ $> ./random_str -m 30
 bhmra8E8cDCrR7MpyryGNAck4dj1d9
 ```
 
+* Usage example:
+
+```bash
+$> cc random_string.c -o random_string
+$> su -
+
+# For include in the users path
+root > mv random_string /usr/local/bin
+
+$> DIRNAME=$(random_string -s 28)
+$> mkdir $DIRNAME
+$> ls
+random_string.c zMXwXITVXquwiDCYDJlAyuzTcuWv
+```
+
+It's utils for create random directory names, random filenames etc from a bash/python/perl script. 
+
+This version is compatible with BSD systems, GNU/Linux and Windows (thanks @DoodleDude (https://github.com/doodledude) for the verification in this system and  for corrections.)
+
 ## Author
 
 * Innaky (innaky@protonmail.com)

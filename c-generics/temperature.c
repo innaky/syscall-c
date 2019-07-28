@@ -2,7 +2,7 @@
 
 int main()
 {
-  int cels, farh; 
+  float cels, farh; 
   int max;
   
   farh = 0;
@@ -11,8 +11,8 @@ int main()
   scanf("%d", &max);
   
   while (farh <= max) {
-    cels = 5 * (farh - 32) / 9;
-    printf("%d ºF is %d ºC", farh, cels);
+    cels = 5.0 * (farh - 32.0) / 9.0;
+    printf("%4.2f ºF is %4.2f ºC", farh, cels);
     farh += 10;
   }
   

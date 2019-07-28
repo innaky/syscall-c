@@ -1,5 +1,7 @@
 #include <stdio.h>
 
+#define JUMP 10
+
 int main()
 {
   float cels, farh; 
@@ -13,7 +15,7 @@ int main()
   while (farh <= max) {
     cels = 5.0 * (farh - 32.0) / 9.0;
     printf("%4.2f ºF is %4.2f ºC", farh, cels);
-    farh += 10;
+    farh += JUMP;
   }
   
   return 0;

@@ -38,6 +38,23 @@ It's utils for create random directory names, random filenames etc from a bash/p
 
 This version is compatible with BSD systems, GNU/Linux and Windows (thanks @DoodleDude (https://github.com/doodledude) for the verification in this system and  for corrections.)
 
+## Temperature.c
+
+This source print in float (decimal) format, the conversion between ºF to ºC. 
+
+The source take an input a integer number, this number is the upper limit since zero ºF.
+
+```bash
+> cc temperature.c -o temperature
+> ./temperature
+Input the max value of the table: 40
+0.00 ºF is -17.78 ºC
+10.00 ºF is -12.22 ºC
+20.00 ºF is -6.67 ºC
+30.00 ºF is -1.11 ºC
+40.00 ºF is 4.44 ºC
+```
+
 ## Author
 
 * Innaky (innaky@protonmail.com)

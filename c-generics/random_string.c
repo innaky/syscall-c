@@ -62,8 +62,8 @@ usage(void)
   fprintf(stderr, "\n");
   fprintf(stderr, "OPTIONS:\n");
   fprintf(stderr, "-n         random integer string\n");
-  fprintf(stderr, "-s         random charachter string\n");
-  fprintf(stderr, "-m         random string containing both integers and charachters\n");
+  fprintf(stderr, "-s         random character string\n");
+  fprintf(stderr, "-m         random string containing both integers and characters\n");
   fprintf(stderr, "\n");
   fprintf(stderr, "NUMBER:\n");
   fprintf(stderr, "[0-9]*     any non-negative integer that will define the length of the generated string\n");

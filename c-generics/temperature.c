@@ -14,7 +14,7 @@ int main()
   
   while (farh <= max) {
     cels = 5.0 * (farh - 32.0) / 9.0;
-    printf("%4.2f ºF is %4.2f ºC", farh, cels);
+    printf("%4.2f ºF is %4.2f ºC\n", farh, cels);
     farh += JUMP;
   }
   
